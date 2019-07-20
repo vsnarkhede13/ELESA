@@ -1,0 +1,6 @@
+this folder contain 5 problems. Each problem is mandatoty and carry 10 mark each. All questions are from hacckerrank and will be tested against standard test cases and according to that points will be given. You are allowed to submit any number of solutions. The one which is sent at most recent before deadline will only considered for final scoring. 
+submission instructions:
+1. give your folder name as following manner
+eg. If your name is Dennis Ritchie and the you are submitting solution of round1, then folder name should be "DennisR_round1"
+2.your folder should contain solution of each problem in text file.
+3.text files should be named same as the problem which it reffering.

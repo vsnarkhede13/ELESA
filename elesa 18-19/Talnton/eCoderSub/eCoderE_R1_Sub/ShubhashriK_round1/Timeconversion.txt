@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int h,m,s,ch,cnt=0;
+  clrscr();
+  printf("Enter time");
+  scanf("%d%d%d",&h,&m,&s);
+  if(h>24)
+  printf("Invalid Time");
+  if(m>60)
+  {
+    while(m>60)
+	      {
+		 m=m-60;
+		 cnt++;
+	      }
+      h=h+cnt;
+  }
+  if(s>60)
+  {
+    while(s>60)
+	      {
+		 s=s-60;
+		 cnt++;
+	      }
+      m=m+cnt;
+  }
+  printf("Enter 1 for am& 2 for pm");
+  scanf("%d",&ch);
+  if(ch==1)
+    printf("Time is: %d:%d:%d",h,m,s);
+  else if(ch==2)
+   printf("Time is: %d:%d:%d",h+12,m,s);
+  getch();
+}

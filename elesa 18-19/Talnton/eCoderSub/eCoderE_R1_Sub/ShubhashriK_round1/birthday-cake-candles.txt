@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int cnt=0,age,i,max=0,temp;
+  int *ptr;
+  clrscr();
+  printf("Enter Age");
+  scanf("%d",&age);
+  ptr=(int*)malloc(age*sizeof(int));
+  for(i=0;i<age;i++)
+  scanf("%d",&ptr[i]);
+  for(i=0;i<age;i++)
+	{
+
+	  if(ptr[i]>max)
+		{
+		  temp=ptr[i];
+		  ptr[i]=max;
+		  max=temp;
+
+		}
+
+	}
+  for(i=0;i<age;i++)
+	{
+	  if(ptr[i]==max)
+	  cnt++;
+	}
+  printf("\n%d",cnt+1);
+  getch();
+}

@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+   int *ptr;
+   int size,i,j,cnt;
+   int a[]={40,45,50,55,60,65,70,75,80,85,90,95,100};
+   clrscr();
+   printf("Enter number of students");
+   scanf("%d",&size);
+   ptr=(int*)malloc(size*sizeof(int));
+   printf("Enter marks");
+   for(i=0;i<size;i++)
+   {
+     scanf("%d",&ptr[i]);
+   }
+  for(i=0;i<size;i++)
+  {
+    if(ptr[i]<38)
+    {printf("\n%d",ptr[i]);}
+    else
+	{
+	      for(j=0;j<13;j++)
+		{
+		   if((a[j]-ptr[i])<=2&&(a[j]-ptr[i])>0)
+		   {
+		     break;
+		   }
+		  // printf("%d",j);
+		}
+	    if(j<13)
+	    printf("\n%d",a[j]);
+	    else
+	    printf("\n%d",ptr[i]);
+
+	}
+
+
+    }
+
+
+   getch();
+}
